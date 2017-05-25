@@ -1,5 +1,5 @@
 <!-- Modal de Delete-->
-<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+<!-- <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -15,4 +15,4 @@
       </div>
     </div>
   </div>
-</div> <!-- /.modal -->
+</div> --> <!-- /.modal -->
