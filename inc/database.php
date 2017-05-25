@@ -39,7 +39,10 @@ function find( $table = null, $id = null )
             $result = $database->query($sql);
 
             if ($result->num_rows > 0) {
-                $found = $result->fetch_all(MYSQLI_ASSOC);
+                $numRows = $result->num_rows;
+                for ($i=0; $i < $numRows; $i++) { 
+                    $found[$i] = $result->fetch_assoc();
+                }
             }
         }
     } catch (Exception $e) {
@@ -48,6 +51,7 @@ function find( $table = null, $id = null )
     }
 
     close_database($database);
+    
     return $found;
 }
 
